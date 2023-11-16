@@ -19,8 +19,8 @@ const produtos = [
 ]
 
 
-function buscarProdutoPorID(){
-  const produto = produtos.find(produto => produto.id == 3);
+function buscarProdutoPorID(id){
+  const produto = produtos.find(produto => produto.id == id);
   return produto || null
 }
 
@@ -34,5 +34,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando em http://localhost:${port}`);   
 });
