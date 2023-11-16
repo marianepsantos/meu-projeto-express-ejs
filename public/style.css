@@ -1,0 +1,16 @@
+.body {
+    background: #ffffff;
+}
+
+.card {
+    height: 450px;
+    width: 360px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 250px;
+}
