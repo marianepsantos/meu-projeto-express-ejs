@@ -5,6 +5,7 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
+
 const produtos = [
   {id: 1, nome: "Body splash Summer ", preço: "R$99,10", descricao: "Um bem-estar envolvente como o verão", imagem: "https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" },
   {id: 2, nome: "Body Splash Pink ", preço: "R$99,20", descricao: "Reivindique o seu estilo Pink da melhor forma!", imagem: "https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" },
