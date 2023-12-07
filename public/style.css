@@ -7,7 +7,7 @@ body {
 
 .navbar {
 
-    background-color: #ffffff;
+    background-color: #fdbddd;
     padding: 15px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -31,7 +31,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: #ff69b4;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -44,19 +44,15 @@ body {
     gap: 40px;
 }
 
-.card {
-    margin-bottom: 20px;
-}
+
 
 .card {
     border: 2px solid #ff69b4;
     box-shadow: 0 4px 8px rgba(5, 5, 5, 0);
     transition: transform 0.3s;
+    width: 100%;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
 
 .card img {
     height: 300px;
@@ -70,27 +66,17 @@ body {
 .card-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 .card-text {
     font-size: 1rem;
+    max-height: 100px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-
-@media (min-width: 768px) {
-    .row-cols-1 {
-        justify-content: space-between;
-    }
-}
-
-.card-body {
-    text-align: center;
-  
 }
 
 .btn-rosa {
