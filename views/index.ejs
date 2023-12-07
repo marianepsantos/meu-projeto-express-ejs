@@ -23,104 +23,25 @@
 
 
   <div class="row row-cols-1 row-cols-md-2 g-4"> 
+    <% for(let produto of produtos){ %>
+    
     <div class="col">
       <div class="card a">
-        <a href="/produto/1">
-          <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
+        <a href="/produto/<%=produto.id%>">
+          <img src="/imagem/<%= produto.imagem %>" class="imagem"><img>
           <div class="card-body">
-            <h5 class="card-title">Body Splash Infinity</h5>
-            <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
+            <h5 class="card-title"><%=produto.nome%></h5>
+           <h4 class="card-text"><%= produto.descricao %></h4>
+            <p class="card-text"><%=produto.preço%></p>
             <button class="btn-rosa">Comprar</button>
           </div>
         </a>
+        
       </div>
     </div>
-        <div class="m">
-            <div class="card a">
-              <a href="/produto2">
-                <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Body Splash Infinity</h5>
-                  <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
-                  <button class="btn-rosa">Comprar</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="m">
-            <div class="card a">
-              <a href="/produto3">
-                <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Body Splash Infinity</h5>
-                  <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
-                  <button class="btn-rosa">Comprar</button>
-                </div>
-              </a>
-            </div>
-          </div>                  
-          <div class="m">
-            <div class="card a">
-              <a href="/produto4">
-                <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Body Splash Infinity</h5>
-                  <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
-                  <button class="btn-rosa">Comprar</button>
-                </div>
-              </a>
-            </div>
-          </div>            
-          <div class="m ">
-            <div class="card a">
-              <a href="/produto5">
-                <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Body Splash Infinity</h5>
-                  <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
-                  <button class="btn-rosa">Comprar</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="m">
-            <div class="card a">
-              <a href="/produto/6">
-                <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Body Splash Infinity</h5>
-                  <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
-                  <button class="btn-rosa">Comprar</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="m">
-            <div class="card a">
-              <a href="/produto7">
-                <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Body Splash Infinity</h5>
-                  <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
-                  <button class="btn-rosa">Comprar</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="m">
-            <div class="card a">
-              <a href="/produto8">
-                <img src="https://wepink.vtexassets.com/arquivos/ids/156226-800-auto?v=638017234609830000&width=800&height=auto&aspect=true" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Body Splash Infinity</h5>
-                  <p class="card-text">R$99,00 </br>ou 8x R$12,37 </p>
-                  <button class="btn-rosa">Comprar</button>
-                </div>
-              </a>
-            </div>
-          </div>
-          
-          
+    <% } %>
+  
+  </div>
 
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         </body>
